@@ -1,24 +1,8 @@
 const fortunes = [
 
-    "今日は恋愛運MAX♡",
+    "今日は恋愛運MAX。積極的に頑張っていきましょう。",
 
-    "気になる人と話せるかも",
-
-    "焦らずゆっくりが吉",
-
-    "自然体でいると◎",
-
-    "今日は空回り注意…！",
-
-    "好きな人と目が合う予感",
-
-    "意外な人から話しかけられるかも",
-
-    "今日は積極的に行こう",
-
-    "放課後に幸運あり",
-
-    "その恋、案外うまくいくかも"
+    "今日は笑顔を、\n大切にしよう。"
 
 ];
 
@@ -40,13 +24,13 @@ image.addEventListener("click", () => {
 
     const selected = fortunes[random];
 
-    // 開いた画像へ変更
+    // 画像変更
     image.src = "open.png";
 
-    // サイズ変更
+    // 開いた状態
     image.classList.add("opened");
 
-    // 内容表示
+    // 改行対応
     message.textContent = selected;
 
     // 表示
