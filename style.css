@@ -60,6 +60,8 @@ body {
     pointer-events: none;
 
     overflow: hidden;
+
+    transition: opacity 0.2s;
 }
 
 /* 縦書き文字 */
@@ -98,7 +100,10 @@ body {
 
 /* 非表示 */
 .hidden {
-    display: none;
+
+    opacity: 0;
+
+    visibility: hidden;
 }
 
 /* フェード演出 */
