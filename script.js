@@ -24,17 +24,22 @@ image.addEventListener("click", () => {
 
     const selected = fortunes[random];
 
-    // 画像変更
+    // 先に画像変更
     image.src = "open.png";
 
     // 開いた状態
     image.classList.add("opened");
 
-    // 改行対応
-    message.textContent = selected;
+    // アニメ終わるまで待つ
+    setTimeout(() => {
 
-    // 表示
-    textArea.classList.remove("hidden");
+        // 内容セット
+        message.textContent = selected;
+
+        // 表示
+        textArea.classList.remove("hidden");
+
+    }, 10);
 
     // 一回制限保存
     sessionStorage.setItem("drawn", "yes");
