@@ -39,7 +39,7 @@ image.addEventListener("click", () => {
         // 表示
         textArea.classList.remove("hidden");
 
-    }, 200);
+    }, 500);
 
     // 一回制限保存
     sessionStorage.setItem("drawn", "yes");
